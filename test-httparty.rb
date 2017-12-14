@@ -13,8 +13,6 @@ RSpec.describe 'API TEST - POST' do
       "name": "Pedro Ailals",
       "email": "Pedo2s.com",
       "body": "Aklsdu jdfhu dfj fdjfh fduuepçaalk fgji asdas"
-      # 'mobilephone' => '5531986116979',
-      # 'homephone' => '553133221144'
     }.to_json
 
     begin
@@ -22,7 +20,6 @@ RSpec.describe 'API TEST - POST' do
       expect(response.code).to eql(201)
       puts response.body
       puts response.message
-      # expect(response.body).to eql('Missing required property: name')
     end
   end
 end
@@ -33,10 +30,8 @@ end
         response = TestParty.get('/posts', body: @body)
         puts "Quantidade de posts: " +response.size.to_s
         expect(response.code).to eql(200)
-        # puts response.body
         puts response.message
         puts response.code
-        # expect(response.body).to eql('Missing required property: name')
       end
     end
 end
