@@ -1,2 +1,2 @@
 # httparty_rspec
-Httparty com Rspac
+Httparty com Rspec
